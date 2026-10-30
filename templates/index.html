@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Escolar | Cantina da Escola</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="cartao">
+        <header class="cabecalho">
+            <p class="projeto">Projeto:</p>
+            <h1>Espaço Escolar<br>Cantina da Escola</h1>
+
+            <div class="divisor">
+                <span></span>
+            </div>
+        </header>
+
+        <section class="apresentacao">
+            <p>
+                Um espaço escolar que hoje está sem uso pode se transformar
+                em uma cantina acolhedora, segura e preparada para atender
+                nossos estudantes.
+            </p>
+
+            <p>
+                Com a colaboração da comunidade, podemos criar um ambiente
+                adequado para refeições, encontros e atividades escolares.
+            </p>
+        </section>
+
+        <img
+            class="foto-cantina"
+            src="{{ url_for('static', filename='img/cantina.jpg') }}"
+            alt="Espaço da escola que será transformado em cantina"
+        >
+
+        <section class="doacao">
+            <p>
+                Cada contribuição ajuda a tornar esse projeto realidade.
+                Apoie a criação da nossa cantina escolar!
+            </p>
+
+            <a class="botao-doacao" href="mailto:sua-escola@exemplo.com">
+                Faça sua doação aqui!
+            </a>
+        </section>
+    </main>
+</body>
+</html>
