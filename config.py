@@ -4,3 +4,5 @@ DB_CONFIG = {
     "password": "escola",
     "database": "gestao_moveis_escolar"
 }
+
+SECRET_KEY = "uma-chave-secreta-longa"

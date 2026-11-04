@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<section class="inicio">
+    <h1>Escolha seu tipo<br>de cadastro</h1>
+
+    <nav class="opcoes">
+        <a class="botao" href="{{ url_for('cadastro_doador') }}">
+            ♡ &nbsp; Cadastro de Doadores
+        </a>
+
+        <button class="botao" type="button"
+                onclick="alert('O cadastro de receptores ainda precisa ser implementado.')">
+            ♧ &nbsp; Cadastro de Receptores
+        </button>
+
+        <button class="botao" type="button"
+                onclick="alert('O cadastro de emissores ainda precisa ser implementado.')">
+            ♡ &nbsp; Cadastro de Emissores
+        </button>
+    </nav>
+</section>
+{% endblock %}

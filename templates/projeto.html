@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<h1 class="titulo-projeto">Projeto</h1>
+<p>Olá, {{ session.get('nome_doador', 'doador') }}!</p>
+
+<a class="botao" href="{{ url_for('doacao') }}">Doar</a>
+<a href="{{ url_for('sair') }}">Sair</a>
+{% endblock %}
