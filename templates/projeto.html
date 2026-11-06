@@ -1,9 +1,49 @@
 {% extends "base.html" %}
 
 {% block conteudo %}
-<h1 class="titulo-projeto">Projeto</h1>
-<p>Olá, {{ session.get('nome_doador', 'doador') }}!</p>
+<section class="pagina-projeto">
+    <h1>Projeto:</h1>
+    <h2>Espaço Escolar / Cantina da Escola</h2>
 
-<a class="botao" href="{{ url_for('doacao') }}">Doar</a>
-<a href="{{ url_for('sair') }}">Sair</a>
+    <div class="linha-decorativa">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="descricao-projeto">
+        <p>
+            Descrição: Um espaço escolar, que não havia sido utilizado,
+            podendo se transformar em uma cantina.
+        </p>
+
+        <p>
+            Um lugar que abrigaria os alunos em suas refeições, sem
+            precisarem se preocupar com chuva, frio ou calor, podendo
+            desfrutar de uma boa refeição em segurança.
+        </p>
+
+        <p>
+            O projeto trata de uma série de tendas com estrutura de aço,
+            com lonas de tecido impermeáveis e isotérmicas que cobririam
+            o teto e formariam as paredes. Também teria várias fileiras
+            de mesas e bancos para os alunos, tornando o intervalo de
+            comida mais eficiente.
+        </p>
+    </div>
+
+    <img
+        class="imagem-projeto"
+        src="{{ url_for('static', filename='projeto.jpg') }}"
+        alt="Espaço escolar coberto com tendas e mesas"
+    >
+
+    <p class="mensagem-projeto">
+        Juntos, cada contribuição sua transforma a nossa visão em realidade :)
+        Venha ajudar e fazer a diferença no nosso projeto!
+    </p>
+
+    <a class="botao-doar-projeto" href="{{ url_for('doacao') }}">
+        Faça sua doação aqui!!
+    </a>
+</section>
 {% endblock %}

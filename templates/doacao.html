@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<section class="cadastro">
+    <h1>Cadastro de doação</h1>
+    <p>Preencha os dados para registrar sua doação.</p>
+
+    <form method="post" class="formulario">
+        <label for="tipo_doacao">Tipo de doação:</label>
+        <input id="tipo_doacao" name="tipo_doacao" type="text" required>
+
+        <label for="valor">Valor:</label>
+        <input id="valor" name="valor" type="number"
+               min="0" step="0.01" required>
+
+        <label for="data_doacao">Data da doação:</label>
+        <input id="data_doacao" name="data_doacao" type="date" required>
+
+        <label for="local_recebimento">Local de recebimento:</label>
+        <input id="local_recebimento" name="local_recebimento"
+               type="text" required>
+
+        <label for="id_receptor">Receptor:</label>
+        <select id="id_receptor" name="id_receptor" required>
+            <option value="">Selecione um receptor</option>
+            {% for receptor in receptores %}
+                <option value="{{ receptor.id_receptor }}">
+                    {{ receptor.razao_social }}
+                </option>
+            {% endfor %}
+        </select>
+
+        <button class="botao-continuar" type="submit">Efetuar doação</button>
+    </form>
+
+    <a class="voltar" href="{{ url_for('projeto') }}">Voltar ao projeto</a>
+</section>
+{% endblock %}

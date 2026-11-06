@@ -130,3 +130,91 @@ body {
         grid-template-columns: 68px 1fr;
     }
 }
+
+.pagina-projeto {
+    width: 100%;
+    text-align: center;
+    color: #222;
+}
+
+.pagina-projeto h1 {
+    margin: 0 0 8px;
+    color: #d958cf;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.pagina-projeto h2 {
+    margin: 0 0 20px;
+    color: #e982dc;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.linha-decorativa {
+    height: 3px;
+    margin: 0 8px 14px;
+    background: #e982dc;
+    position: relative;
+}
+
+.linha-decorativa span {
+    position: absolute;
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #e982dc;
+}
+
+.linha-decorativa span:first-child {
+    left: 0;
+}
+
+.linha-decorativa span:last-child {
+    right: 0;
+}
+
+.descricao-projeto {
+    max-width: 310px;
+    margin: 0 auto 16px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.descricao-projeto p {
+    margin: 8px 0;
+}
+
+.imagem-projeto {
+    display: block;
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+    margin: 0 auto 8px;
+}
+
+.mensagem-projeto {
+    max-width: 300px;
+    margin: 8px auto;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.botao-doar-projeto {
+    display: inline-block;
+    margin: 4px auto 0;
+    padding: 7px 13px;
+    border-radius: 10px;
+    background: #e982dc;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.botao-doar-projeto:hover {
+    background: #d958cf;
+}
