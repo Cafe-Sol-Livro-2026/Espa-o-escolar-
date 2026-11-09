@@ -9,15 +9,13 @@
             ♡ &nbsp; Cadastro de Doadores
         </a>
 
-        <button class="botao" type="button"
-                onclick="alert('O cadastro de receptores ainda precisa ser implementado.')">
+        <a class="botao" href="{{ url_for('cadastro_receptor') }}">
             ♧ &nbsp; Cadastro de Receptores
-        </button>
+        </a>
 
-        <button class="botao" type="button"
-                onclick="alert('O cadastro de emissores ainda precisa ser implementado.')">
+        <a class="botao" href="{{ url_for('cadastro_emissor') }}">
             ♡ &nbsp; Cadastro de Emissores
-        </button>
+        </a>
     </nav>
 </section>
 {% endblock %}
