@@ -231,3 +231,186 @@ button:hover,
         height: 64px;
     }
 }
+
+.foto-projeto {
+    display: block;
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    object-fit: contain;
+    margin: 15px auto;
+}
+
+
+/* =========================================
+   TELA INICIAL - MODELO DA IMAGEM ORIGINAL
+   ========================================= */
+
+   body.body-inicio {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    background: #fff7ff !important;
+    overflow-x: hidden;
+}
+
+/* Moldura externa */
+
+body.body-inicio main.pagina-inicio {
+    position: relative !important;
+
+    width: min(448px, calc(100vw - 4px)) !important;
+    height: min(708px, calc(100vh - 10px)) !important;
+
+    min-height: 0 !important;
+    max-width: none !important;
+
+    margin: 5px auto !important;
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+
+    border: 2px solid #e65be0 !important;
+    border-radius: 9px !important;
+
+    background-color: #fff8ff !important;
+
+    background-image: url("assets/fundo-decorativo.svg") !important;
+    background-size: 100% 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    overflow: hidden !important;
+}
+
+/* Quadro central */
+
+.cartao-inicial {
+    position: relative;
+    z-index: 2;
+
+    width: 245px !important;
+    height: 384px !important;
+
+    min-height: 0 !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+    padding: 9px 12px !important;
+
+    background: #ffffff !important;
+
+    border: 2px solid #e65be0 !important;
+    border-radius: 9px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+/* Título */
+
+.cartao-inicial h1 {
+    width: 100%;
+
+    margin: 0 0 72px !important;
+    padding: 0 !important;
+
+    color: #d45bcf !important;
+
+    font-family: Georgia, serif !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+
+    line-height: 1.15 !important;
+    text-align: center !important;
+}
+
+/* Área dos botões */
+
+.cartao-inicial .opcoes {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 14px !important;
+}
+
+/* Botões */
+
+.cartao-inicial .opcao {
+    width: 173px !important;
+    height: 53px !important;
+
+    min-height: 53px !important;
+
+    padding: 4px 8px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 7px !important;
+
+    background: #e393df !important;
+
+    border: none !important;
+    border-radius: 9px !important;
+
+    color: #ffffff !important;
+
+    font-family: Georgia, serif !important;
+    font-size: 9px !important;
+    font-weight: bold !important;
+
+    text-decoration: none !important;
+
+    transition: background .2s, transform .2s;
+}
+
+/* Ícones */
+
+.cartao-inicial .icone {
+    width: 42px !important;
+    min-width: 42px !important;
+
+    font-size: 27px !important;
+    text-align: center !important;
+}
+
+/* Efeito ao passar o mouse */
+
+.cartao-inicial .opcao:hover {
+    background: #d45bcf !important;
+    transform: scale(1.02);
+}
+
+/* Remover decorações antigas em caracteres */
+
+.body-inicio .decoracao {
+    display: none !important;
+}
+
+/* Celulares */
+
+@media (max-width: 480px) {
+
+    body.body-inicio main.pagina-inicio {
+        width: calc(100vw - 4px) !important;
+        height: calc(100vh - 10px) !important;
+    }
+
+}

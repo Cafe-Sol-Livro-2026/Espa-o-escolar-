@@ -359,35 +359,54 @@ if ($page === 'doacao') {
 
 </head>
 
-<body>
+<body class="<?= $page === 'inicio' ? 'body-inicio' : '' ?>">
 
-<main class="pagina">
-
+<main class="pagina <?= $page === 'inicio' ? 'pagina-inicio' : '' ?>">
 <?= mostrar_aviso(); ?>
 
 
 <?php if ($page === 'inicio'): ?>
 
+<div class="decoracao decoracao-livro">▤</div>
+<div class="decoracao decoracao-lapis">✎</div>
+<div class="decoracao decoracao-maca">♧</div>
+<div class="decoracao decoracao-mais mais-1">＋</div>
+<div class="decoracao decoracao-mais mais-2">＋</div>
+<div class="decoracao decoracao-mais mais-3">＋</div>
+<div class="decoracao decoracao-mais mais-4">＋</div>
+<div class="decoracao decoracao-wifi">⌁</div>
+
+<section class="cartao-inicial">
+
     <h1>
-        Escolha seu tipo<br>
-        de cadastro
+        Escolha seu tipo de<br>
+        cadastro
     </h1>
 
     <nav class="opcoes">
 
         <a class="opcao" href="?page=cadastro_doador">
+
             <span class="icone">🤲</span>
-            Cadastro de Doadores
+
+            <span>Cadastro de Doadores</span>
+
         </a>
 
         <a class="opcao" href="?page=cadastro_receptor">
+
             <span class="icone">🏫</span>
-            Cadastro de Receptores
+
+            <span>Cadastro de Receptores</span>
+
         </a>
 
         <a class="opcao" href="?page=cadastro_emissor">
+
             <span class="icone">📄</span>
-            Cadastro de Emissores
+
+            <span>Cadastro de Emissores</span>
+
         </a>
 
     </nav>
@@ -395,14 +414,18 @@ if ($page === 'doacao') {
     <?php if (usuario()): ?>
 
         <p class="centro">
+
             Conectado: <?= e(usuario()['nome']) ?>
 
             ·
 
             <a href="?page=sair">Sair</a>
+
         </p>
 
     <?php endif; ?>
+
+</section>
 
 
 <?php elseif (
@@ -570,9 +593,9 @@ if ($page === 'doacao') {
     </p>
 
     <img
-        class="foto-projeto"
-        src="assets/projeto-escolar.jpg"
-        alt="Espaço escolar do projeto"
+    src="assets/tenda.png"
+    class="foto-projeto"
+    alt="Cantina e espaço escolar"
     >
 
     <p class="centro">
